@@ -8,6 +8,8 @@ import string
 tfidf=pickle.load(open('vectorizer.pkl','rb'))
 model=pickle.load(open('model.pkl','rb'))
 
+nltk.download('punkt')
+
 def text_transform(text):
     text=text.lower()
     text=nltk.word_tokenize(text)
