@@ -9,6 +9,7 @@ tfidf=pickle.load(open('vectorizer.pkl','rb'))
 model=pickle.load(open('model.pkl','rb'))
 
 nltk.download('punkt')
+nltk.download('stopwords')
 
 def text_transform(text):
     text=text.lower()
